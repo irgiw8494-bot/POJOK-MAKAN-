@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="inputNilai"><b>Masukan nilai : </b></label>
+    <input type="number" name="nilai" id="nilai" />
+    <br />
+    <button onclick="ceknilai()"><b>Cek hasil</b></button>
+
+    <script>
+      function ceknilai() {
+        let nilai = Number(document.getElementById("nilai")).value;
+        let hasil = nilai % 2;
+        if (hasil == 0) {
+          alert("Nilai anda genap!");
+        } 
+        
+        else {
+          alert("Nilai anda ganjil!");
+        }
+      }
+    </script>
+  </body>
+</html>

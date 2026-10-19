@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menentukan Kategori Usia</title>
+</head>
+<body>
+    <h2>Program Menentukan Kategori Usia</h2>
+
+    <label>Nama:</label>
+    <input type="text" id="nama">
+    <br><br>
+
+    <label>Usia:</label>
+    <input type="number" id="umur">
+    <br><br>
+
+    <button onclick="cekUmur()">Cek Umur</button>
+    <h3 id="hasil" style="white-space: pre-line;"></h3>
+
+    <script>
+        function cekUmur() {
+            const nama = document.getElementById("nama").value.trim();
+            const inputUmur = document.getElementById("umur").value;
+            const umur = Number(inputUmur);
+            let kategori;
+
+            if (inputUmur === "" || umur < 0) {
+                kategori = "Salah Input";
+            } else if (umur > 60) {
+                kategori = "Lansia";
+            } else if (umur >= 18) {
+                kategori = "Dewasa";
+            } else if (umur >= 13) {
+                kategori = "Remaja";
+            } else if (umur >= 7) {
+                kategori = "Anak-anak";
+            } else {
+                kategori = "Balita";
+            }
+
+            document.getElementById("hasil").textContent =
+                `Nama: ${nama}\nUmur: ${umur}\nHasil: ${kategori}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+ font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 140, 63);
+    margin-top: 200px;
+    margin-left: 50px;
+    margin: 100px;
+    max-width: 100%;

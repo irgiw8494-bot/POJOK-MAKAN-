@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+
+    <style>
+      body {
+        text-align: center;
+      }
+      
+      .cekumur{
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cekumur">
+      <h1><b>Program menentukan kategori usia</b></h1>
+      <br />
+      <br />
+      <label for="nama">Nama : </label>
+      <input type="text" id="nama" placeholder="Masukan nama anda" />
+      <br />
+      <br />
+      <label for="tahunLahir">Tahun lahir : </label>
+      <input type="number" id="tahunLahir" placeholder="Masukan tahun lahir" />
+      <br />
+      <br />
+      <button onclick="cekumur()">Cek umur</button>
+
+      <script>
+        function cekumur() {
+          let tahun = Number(document.getElementById("tahunLahir").value);
+          let cek = 2026 - tahun;
+          alert("Usia kamu adalah " + cek);
+        }
+      </script>
+    </div>
+  </body>
+</html>

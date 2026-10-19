@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    min-height: 100vh;
+       background:
+        radial-gradient(
+            circle at 90% 10%,
+            #2c2c2c 0%,
+            #252525 25%,
+            transparent 55%
+        ),
+        radial-gradient(
+            circle at 10% 90%,
+            #2c2c2c 0%,
+            #1A1A1A 25%,
+            transparent 55%
+        ),
+        #050505;
+        display: flex;
+        justify-content: center;
+}
+
+.profil{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #050505;
+    width: 70%;
+    border-radius: 20px;
+    height: 500px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profil:hover{
+    transform: scale(1.01);
+    box-shadow: #050505 0 10px 40px 10px;
+}
+
+.JA{
+    font-weight: 600;
+    color: white;
+    margin-left: 30px;
+}
+
+.FT{
+    margin-left: 50px;
+    border-radius: 50%;
+    border: #1F6B43;
+}
+
+.BS{
+    color: white;
+    margin-top: -200px;
+    margin-left: 270px;
+}
+
+.KA{
+    color: white;
+    margin-left: 270px;
+}
+
+.JS{
+    max-height: 500px;
+    height: 30px;
+}
+
+.MD{
+    margin-left: 270px
+}
+
+.MEDIA{
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    border: 1px solid #39FF88;
+    background: none;
+    color: #39FF88;
+    transition-duration: 0.3s;
+}
+
+.MEDIA:hover{
+    background-color: #39FF88;
+    color: #050505;
+}
+
+.ME{
+    border-radius: 20px;
+    border: none;
+    background: #39FF88;
+    padding: 10px 20px;
+}
+
+.halo{
+    color: #1F6B43;
+}

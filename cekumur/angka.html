@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="yoga"><b>Masukan angka : </b></label>
+    <input type="number" name="" id="angka">
+    <button type="button" onclick="gg()"><b>Kirim</b></button>
+    <p id="hasil"></p>
+    <br>
+    <h1 id="hari">Hari</h1>
+
+    <script>
+        function gg(){
+            let angka = parseInt(document.getElementById("angka").value);
+            let coba = 2;
+            let hasil = angka % coba;
+            if (hasil == 0){
+                alert('Hasil nya adalah genap');
+            }
+
+            else{
+                alert('Hasil nya adalah ganjil');
+            }
+        }
+    </script>
+</body>
+</html>
